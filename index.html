@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Frontend Developer</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="src/output.css" />
 </head>
 
 <body>
   <!-- Navbar -->
   <header class="header" id="home">
-    <nav class="nav container">
-      <a href="#home" class="logo">YourName</a>
+    <nav class="nav-custom  container-custom">
+      <a href="#home" class="logo">Shantanu</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         ☰
       </button>
@@ -31,8 +31,8 @@
     <!-- Hero -->
     <section class="hero container">
       <div class="hero-text">
-        <p class="hero-subtitle">Hi, I am</p>
-        <h1>Shantanu</h1>
+        <p class="hero-subtitle"><span class="wave">👋</span> <span class="fade-in-1">Hi,</span> <span class="fade-in-2">I am</span></p>
+        <h1 class="fade-in-3">Shantanu</h1>
         <p class="hero-role">Frontend Developer</p>
         <p class="hero-desc">
           I build responsive, accessible, and modern web interfaces using
@@ -44,8 +44,7 @@
         </div>
       </div>
       <div class="hero-image">
-        <!-- Replace with your image -->
-        <div class="avatar">YN</div>
+        <img src="images/shantanu_pic.jpg" alt="Profile" class="avatar" />
       </div>
     </section>
   </header>
