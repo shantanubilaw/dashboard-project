@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Frontend Developer</title>
   <link rel="stylesheet" href="src/output.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+
 </head>
 
 <body>
@@ -69,22 +72,41 @@
   <section class="section section-alt" id="skills">
     <div class="container">
       <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Frontend</h3>
-          <p>HTML5, CSS3, JavaScript (ES6+), React, Next.js</p>
-        </div>
-        <div class="skill-card">
-          <h3>Styling</h3>
-          <p>Responsive Design, Flexbox, Grid, Tailwind CSS, Bootstrap</p>
-        </div>
-        <div class="skill-card">
-          <h3>Tools</h3>
-          <p>Git, GitHub, VS Code, Figma, Chrome DevTools</p>
-        </div>
-        <div class="skill-card">
-          <h3>Other</h3>
-          <p>REST APIs, JSON, Basic Node.js, UI/UX basics</p>
+      <div class="skills-scroll-container">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend/Styling</h3>
+            <p>HTML5, CSS3, JavaScript , React, Tailwind CSS</p>
+          </div>
+          <div class="skill-card">
+            <h3>DevOps & Deployment Skills</h3>
+            <p>Docker, GitLab CI/CD, Nginx, Cloudflare </p>
+          </div>
+          <div class="skill-card">
+            <h3>Backend & Database Skills</h3>
+            <p>Appwrite(file storage APIs, authentication, bucket management), Node.js, MySQL/MongoDB </p>
+          </div>
+          <div class="skill-card">
+            <h3>Other</h3>
+            <p>REST APIs, JSON, Node.js, </p>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="skill-card">
+            <h3>Frontend/Styling</h3>
+            <p>HTML5, CSS3, JavaScript , React, Tailwind CSS</p>
+          </div>
+          <div class="skill-card">
+            <h3>Styling</h3>
+            <p>Responsive Design, Flexbox, Grid, Tailwind CSS, Bootstrap</p>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Figma, Chrome DevTools</p>
+          </div>
+          <div class="skill-card">
+            <h3>Other</h3>
+            <p>REST APIs, JSON, Basic Node.js, UI/UX basics</p>
+          </div>
         </div>
       </div>
     </div>
@@ -104,35 +126,33 @@
           <p class="project-tech">Tech: HTML, CSS, JS</p>
           <div class="project-links">
             <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
-            <a href="#" target="_blank" rel="noreferrer">Source Code</a>
+            <a href="https://github.com/shantanubilaw/dashboard-project.git" target="_blank" rel="noreferrer">Source Code</a>
           </div>
         </article>
+<article class="project-card">
+  <h3>StoreIt</h3>
+  <p>
+    Full-stack file management app for uploading, storing, and managing various file types (documents, images, videos) using Appwrite backend APIs for secure storage, authentication, and data handling.
+  </p>
+  <p class="project-tech">Tech: React, Appwrite, Node.js, MySQL</p>
+  <div class="project-links">
+    <a href="https://shantanusresume.online/storeit" target="_blank" rel="noreferrer">Live Demo</a>
+    <a href="https://github.com/shantanubilaw/store_it.git" target="_blank" rel="noreferrer">Source Code</a>
+  </div>
+</article>
 
-        <article class="project-card">
-          <h3>Dashboard UI</h3>
-          <p>
-            An interactive dashboard with charts, filters, and responsive layout
-            designed for monitoring app metrics.
-          </p>
-          <p class="project-tech">Tech: React, Chart.js</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
-            <a href="#" target="_blank" rel="noreferrer">Source Code</a>
-          </div>
-        </article>
+<article class="project-card">
+  <h3>DevOps CI/CD Pipeline</h3>
+  <p>
+    End-to-end DevOps setup for application lifecycle using Docker config files for containerization, GitLab pipelines for planning, automated testing, building, and deployment to production servers.
+  </p>
+  <p class="project-tech">Tech: Docker, GitLab CI/CD, Nginx, Cloudflare</p>
+  <div class="project-links">
+    <a href="https://shantanusresume.online/devops-demo" target="_blank" rel="noreferrer">Live Demo</a>
+    <a href="https://github.com/shxntanu/devops-pipeline" target="_blank" rel="noreferrer">Source Code</a>
+  </div>
+</article>
 
-        <article class="project-card">
-          <h3>Task Manager</h3>
-          <p>
-            A Kanban-style task manager with drag-and-drop support and local
-            storage persistence.
-          </p>
-          <p class="project-tech">Tech: React, CSS</p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
-            <a href="#" target="_blank" rel="noreferrer">Source Code</a>
-          </div>
-        </article>
       </div>
     </div>
   </section>
@@ -141,25 +161,32 @@
   <section class="section section-alt" id="contact">
     <div class="container">
       <h2 class="section-title">Contact</h2>
-      <p class="section-text">
-        Have an opportunity or want to collaborate? Drop a message.
-      </p>
-      <form id="contactForm" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
+      <div class="contact-wrapper">
+        <div class="contact-content">
+          <p class="section-text">
+            Have an opportunity or want to collaborate? Drop a message.
+          </p>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+            <p id="contactStatus" style="margin-top:.6rem;color:var(--muted)"></p>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <div class="contact-image">
+          <lottie-player src="Space Cat.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
         </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-        </div>
-        <button type="submit" class="btn primary">Send Message</button>
-        <p id="contactStatus" style="margin-top:.6rem;color:var(--muted)"></p>
-      </form>
+      </div>
     </div>
   </section>
 
