@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="src/output.css" />
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5EJTZJEJ8M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5EJTZJEJ8M');
+  </script>
 
 </head>
 
@@ -150,7 +158,7 @@ These showcase my expertise in Node.js/React, cloud deployment (AWS/Cloudflare),
   </p>
   <p class="project-tech">Tech: Docker, GitLab CI/CD, Nginx, Cloudflare</p>
   <div class="project-links">
-    <a href="https://shantanusresume.online/devops-demo" target="_blank" rel="noreferrer">Live Demo</a>
+    <a href="https://github.com/shantanubilaw/devops-pipelines.git" target="_blank" rel="noreferrer">Live Demo</a>
     <a href="https://github.com/shxntanu/devops-pipeline" target="_blank" rel="noreferrer">Source Code</a>
   </div>
 </article>
@@ -196,6 +204,9 @@ These showcase my expertise in Node.js/React, cloud deployment (AWS/Cloudflare),
   <footer class="footer">
     <div class="container footer-content">
       <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <p id="visitorCount" style="font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem;">
+        👥 Visitors: <span id="visitCount">Loading...</span>
+      </p>
       <div class="footer-links">
         <a href="https://github.com/shantanubilaw" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/shantanu-bilawane-46033a260/" target="_blank" rel="noreferrer">LinkedIn</a>

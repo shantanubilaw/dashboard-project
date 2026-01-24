@@ -67,4 +67,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => (status.textContent = ''), 5000);
   });
+
+  // Visitor Counter using CountAPI
+  const updateVisitorCount = async () => {
+    try {
+      // Using CountAPI.xyz - a free visitor counter API
+      const response = await fetch('https://api.countapi.xyz/hit/shantanu-portfolio/visits');
+      const data = await response.json();
+      document.getElementById('visitCount').textContent = data.value || '---';
+    } catch (error) {
+      console.error('Error fetching visitor count:', error);
+      document.getElementById('visitCount').textContent = '---';
+    }
+  };
+
+  // Initialize visitor count
+  updateVisitorCount();
 });
